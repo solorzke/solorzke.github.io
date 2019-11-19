@@ -1,17 +1,18 @@
 body{
 	font-family: 'Open Sans', sans-serif;
-	padding-top: 5rem;
 	background-color: black;
 }
 
 .starter-template {
-	padding: 3rem 1.5rem;
+	padding: 5rem 1.5rem;
 	text-align: center;
 }
 
 #header-img{
 	background-image: url('../images/header.png');
-	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: auto;
+	
 	background-color: rgba(255, 255, 255, 0.4);
 }
 
@@ -19,6 +20,57 @@ body{
 	font-size: 1.5rem;
 }
 
+
 body,html {
     height: 100%;
+}
+/* 
+	h1: 2.5rem or 40px
+	h2: 2rem or 32px
+	h3: 1.75rem or 28px
+	h4: 1.5rem or 24px
+	h5: 1.25rem or 20px
+	h6: 1rem or 16px
+
+	p: 1rem or 16px
+*/
+/* Smartphones or screens of 350px  */
+@media (min-width: 150px) {
+	body p { font-size: 1rem; }
+	body h1 { font-size: 1.7rem; }
+	body h2 { font-size: 1.4rem; }
+	body h3 { font-size: 1.2rem; }
+	body h4 { font-size: 1.1rem; }
+	.starter-template p { font-size: .85rem; }
+	.starter-template img { height: 250px; width: 180px; }
+	.starter-template img { height: 350px; width: 250px; }
+}
+
+/* Smartphones/Tablets or screens of 576px */
+@media (min-width: 576px) {
+	.starter-template p { font-size: .9rem; }
+	body h1 { font-size: 1.9rem; }
+	body h2 { font-size: 1.6rem; }
+	body h3 { font-size: 1.4rem; }
+	body h4 { font-size: 1.2rem; }
+}
+
+/* Tablets/Notebooks or screens of 768px */
+@media (min-width: 768px) {
+	.starter-template p { font-size: 1rem; }
+	.starter-template img { height: 470px; width: 350px; }
+	body h1 { font-size: 2.1rem; }
+	body h2 { font-size: 1.7rem; }
+	body h3 { font-size: 1.6rem; }
+	body h4 { font-size: 1.3rem; }
+}
+
+/* Laptops/Desktops or screens of at least 992px */
+@media (min-width: 992px) {
+	.about p { font-size: 1.3rem; }
+	.starter-template p { font-size: 1.2rem; }
+	.starter-template h1 { font-size: 2.25rem; }
+}
+@media (min-width: 1200px) {
+	.about p { font-size: 1.2rem; }
 }
