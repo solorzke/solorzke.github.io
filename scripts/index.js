@@ -41,4 +41,6 @@ $(document).ready(function() {
         }, 1000);
         console.log("Interests is clicked!");
     });
+
+    $("#year").text(new Date().getFullYear());
 });
