@@ -1,3 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+/* f5054f */
+
+.skills p { font-size: 1.5rem; }
+
+body,html { height: 100%; }
+
 body{
 	font-family: 'Open Sans', sans-serif;
 	background-color: black;
@@ -7,7 +14,6 @@ body{
 	padding: 5rem 1.5rem;
 	text-align: center;
 }
-
 #header-img{
 	background-image: url('../images/shapes.gif');
 	background-repeat: repeat;
@@ -16,14 +22,32 @@ body{
 	background-color: rgba(255, 255, 255, 0.4);
 }
 
-.skills p{
-	font-size: 1.5rem;
+form .form-control::-webkit-input-placeholder { color: black; }
+  
+form .form-control::-moz-placeholder { color: black; }
+
+form .form-control:-ms-input-placeholder { color: black; }
+
+form .form-control:placeholder { color: black; }
+
+form { 
+	border: 2px solid black; 
+	font-family: 'Montserrat', Arial, sans-serif;
 }
 
-
-body,html {
-    height: 100%;
+form .form-control{
+	background: none;
+	border: none;
+	border-bottom: solid 2px black;
+	color: black;
 }
+
+form .form-control:focus{
+	outline: none;      /* Remove default outline and use border or box-shadow */
+	box-shadow: 0 0 0 0; /* Full freedom. (works also with border-radius) */
+	border-bottom: solid 2px black;
+}
+
 /* 
 	h1: 2.5rem or 40px
 	h2: 2rem or 32px

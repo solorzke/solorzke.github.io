@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Solorzke | Contact Me</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Welcome to the official portfolio of Kevin Solorzano, Web Developer based in NJ, USA">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kevin Solorzano">
+    <!--Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="../scripts/index.js" type="text/javascript"></script>
+    <link rel="icon" href="../images/logo.ico">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/cover.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark">
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-md navbar-light bg-warning fixed-top">
+        <img src="../images/initials.png" width="30" height="30" class="d-inline-block align-top">
+        <a class="navbar-brand text-dark px-1" href="#">Solorzke Designs</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon toggler-icon-color"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-dark" href="#" id="home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#" id="about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#" id="exp">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#" id="edu">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#" id="skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#" id="interests">Interests</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link text-dark" href="contact.html">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Contact Form Section-->
+    <div class="container d-flex my-3" style="padding: 5rem 1.5rem;">
+        <form method="POST" action="../scripts/index.php"
+            class="justify-content-center align-self-center mx-auto p-5 bg-light">
+            <h1 class="text-center py-2">• CONTACT ME •</h1>
+            <img class="img-fluid mx-auto d-block pb-3" src="../images/msg.png" height="50" width="60">
+            <div class="form-row">
+                <div class="col">
+                    <input id="name" class="form-control text-capitalize" type="text" name="name" required
+                        placeholder="MY NAME IS">
+                </div>
+                <div class="col">
+                    <input id="email" class="form-control" type="email" name="email" required placeholder="MY EMAIL IS">
+                </div>
+            </div>
+            <br>
+            <input id="number" class="form-control" type="tel" name="number" required placeholder="MY NUMBER IS"
+                pattern="[(][0-9]{3}[)] [0-9]{3}-[0-9]{4}" onkeyup="number_val()">
+            <br>
+            <input class="form-control text-capitalize" type="text" name="subject" required placeholder="SUBJECT LINE">
+            <br>
+            <textarea name="body" class="form-control" rows="4" cols="50" placeholder="I'D LIKE TO CHAT ABOUT" required></textarea>
+            <br>
+            <button class="btn" type="submit">SEND MESSAGE</button>
+            <input type="hidden" name="action" value="contact">
+        </form>
+    </div>
+
+    <!--Footer Section-->
+    <footer class="footer text-center bg-warning py-5">
+        <div class="container text-dark">
+            <span class="pull-left">&copy; Kevin Solorzano | </span><span class="pull-right" id="year">Current
+                Year</span>
+        </div>
+    </footer>
+
+    <!--Btn Styling CSS-->
+    <style>
+        .btn:hover,
+        .btn:focus,
+        .btn:active,
+        .btn.active,
+        .open>.dropdown-toggle.btn {
+            color: #fff;
+            background-color: black;
+            border-color: black;
+            /*set the color you want here*/
+        }
+
+        .btn {
+            border: 2px solid black;
+        }
+    </style>
+</body>
+
+</html>
