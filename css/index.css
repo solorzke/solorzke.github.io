@@ -162,12 +162,12 @@ form .form-control:focus {
 		font-size: .85rem;
 	}
 	.htmltag {
-		font-size: 1.25rem;
+		font-size: 1rem;
 	}
 
 	.cursor {
-		width: .8rem;
-		height: 2.5rem;
+		width: .7rem;
+		height: 2rem;
 	}
 }
 
@@ -225,6 +225,16 @@ form .form-control:focus {
 
 	.htmltag {
 		font-size: 2.5rem;
+	}
+
+	.cursor {
+		background: lime;
+		line-height: 17px;
+		margin-left: 3px;
+		animation: blink 0.8s infinite;
+		-webkit-animation: blink 0.8s infinite;
+		width: 1rem;
+		height: 4rem;
 	}
 }
 

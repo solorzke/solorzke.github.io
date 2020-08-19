@@ -1,5 +1,7 @@
 $(document).ready(function() {
 	console.log("Document is loaded & displayed on the user's page");
+	changeMessage();
+
 	$('#home').click(function() {
 		$('html, body').animate(
 			{
@@ -78,4 +80,19 @@ function number_val() {
 			}
 		}
 	}
+}
+
+function changeMessage() {
+	const messages = [
+		'<h1>Hello User...</h1>',
+		'console.log("Hello World");',
+		'echo("Hello Server");',
+		'Log.d("main", "Hello User");',
+		'print("Hello Visitor")'
+	];
+	window.setInterval(function() {
+		let codeElement = document.querySelector('code');
+		const random = Math.floor(Math.random() * messages.length);
+		codeElement.innerText = messages[random];
+	}, 2000);
 }
