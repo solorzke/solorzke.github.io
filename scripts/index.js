@@ -1,6 +1,9 @@
 $(document).ready(function() {
 	console.log("Document is loaded & displayed on the user's page");
 	changeMessage();
+	$(window).resize(function() {
+		changeContactFlexDirection();
+	});
 
 	$('#home').click(function() {
 		$('html, body').animate(
@@ -95,4 +98,15 @@ function changeMessage() {
 		const random = Math.floor(Math.random() * messages.length);
 		codeElement.innerText = messages[random];
 	}, 2000);
+}
+
+function changeContactFlexDirection() {
+	const contactMeElement = document.querySelector('.links');
+	if (window.innerWidth <= 991) {
+		console.log('hello');
+		contactMeElement.classList.remove('d-flex', 'flex-row', 'justify-content-center');
+	} else {
+		console.log('world');
+		contactMeElement.classList.add('d-flex', 'flex-row', 'justify-content-center');
+	}
 }
