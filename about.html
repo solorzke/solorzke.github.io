@@ -157,7 +157,6 @@
         </div> <!-- End Offcanvas Mobile Menu Wrapper -->
     </div>
     <!-- ...:::: End Offcanvas Mobile Menu Section:::... -->
-
         <!-- Offcanvas Overlay -->
         <div class="offcanvas-overlay"></div>
 
@@ -170,10 +169,10 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="breadcrumb-content">
-                                <h2 class="title">Steam Theater</h2>
+                                <h2 class="title">About Me</h2>
                                 <ul class="breadcrumb-link">
-                                    <li><a href="project-list.html">Projects</a></li>
-                                    <li class="active" aria-current="page">Project Details</li>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class="active" aria-current="page">About</li>
                                 </ul>
                             </div>
                         </div>
@@ -183,159 +182,163 @@
         </div>
         <!-- ...::: End Breadcrumb Section :::... -->
 
-        <!-- .....:::::: Start Project Details Section :::::.... -->
-        <div class="project-details-section section-gap-tb-165">
-            <div class="project-details-box">
+        <!-- ...::: Start Vider Info Display Section :::... -->
+        <div class="video-info-display-section section-gap-tb-165">
+            <div class="video-info-display-box">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <!-- Start Project Content Section -->
-                            <div class="project-content-section pos-relative">
-                                <div class="project-hero-image">
-                                    <img src="assets/images/misc/game-controller.png" alt="Game Controller">
+                    <div class="video-info-display-wrapper">
+                        <div class="row align-items-center">
+                            <div class="col-xl-5 col-lg-6 col-md-6 col-sm-8 col-10 offset-1 offset-sm-2 offset-md-3 offset-lg-0">
+                                <div class="video-card">
+                                    <!-- 
+                                    <a class="wave-btn" href="https://youtu.be/MKjhBO2xQzg" data-autoplay="true" data-vbtype="video">
+                                        <div class="ripple"><i class="icofont-ui-play"></i></div>
+                                    </a>
+                                    -->
+
+                                    <img src="assets/images/misc/logo.png" style="width: 50%" >
+
+                                    <a download="Resume" rel="noopener noreferrer" href="./resume.pdf" class="btn btn-xl btn-outline-one icon-space-left">Get Resume <i class="icofont-download"></i></a>
+
                                 </div>
-
-                                <div class="row">
-                                    <div class="col-lg-8">
-                                        <!-- Start Section Content -->
-                                        <div class="default-content-style pos-relative">
-                                            <span class="section-tag">Steam Theater</span>
-                                            <h2 class="title">Steam Theater is a messaging-broker web application</h2>
-                                            <p>
-                                                This collaborative Senior project was to be submitted at the end of the Fall 2019 
-                                                semester as I was on course to graduate. The goal was to first, establish a four 
-                                                server-cluster consisting of: front-end, back-end, DMZ, and a messaging broker 
-                                                (RabbitMq) wired into a local network router to deploy a real-world web-service 
-                                                product that identified the user's least-played video-games on their Steam backlog, 
-                                                and present Twitch/YouTube streams of those video-games.
-                                            </p>
-                                            <p>
-                                                The user can also view their friend's least-played video-games and compare/contrast 
-                                                what their interests are in their games. Then, scale the project to 12 servers 
-                                                culminating into a 3 tier-cluster of production, development, and staging platforms before deploying.
-                                            </p>
-
-                                            <h3 class="sub-title">How to complete this?</h3>
-                                            <p>
-                                                Our servers were created through Virtual Box Vm's in Ubuntu 18.04 and 
-                                                we had to configure our static IP addresses to the router. I was responsible 
-                                                of the front-end server, consisting of designing the site's interface 
-                                                authentication process, and writing the scripts required to produce/consume 
-                                                RabbitMq messages in the virtual-host's queue.
-                                            </p>
-
-                                            <ul class="content-list-item content-list-with-icon">
-                                                <li>
-                                                    <div class="left">
-                                                        <div class="icon">
-                                                            <i class="icofont-bulb-alt"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="right">
-                                                        <h4 class="list-title">Map All REST API Requests</h4>
-                                                        <p>
-                                                            Use Postman, an API platform, to configure all the required REST API requests needed to pull data from
-                                                            for the application. This data came from API's like Steam, YouTube, &amp; Twitch to pull data such as game stats,
-                                                            player time spent, and views accounted for to track the hottest trending video games across all 3 platforms.
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="left">
-                                                        <div class="icon">
-                                                            <i class="icofont-ruler-pencil-alt-2"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="right">
-                                                        <h4 class="list-title">Design Web Application</h4>
-                                                        <p>
-                                                            Use libraries like Bootstrap to build a robust web application that provided a way to sign in, present stat pages, player
-                                                            information, and playlists of the hottest video-game streams on twitch that matched with the video games the user spent the least
-                                                            amount of time on. 
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="left">
-                                                        <div class="icon">
-                                                            <i class="icofont-airplane"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="right">
-                                                        <h4 class="list-title">Deploy App &amp; Backend To Messaging Broker</h4>
-                                                        <p>
-                                                            Start developing the application and the backend database. Build a CURL script to verify 
-                                                            if login info exists in university's DB. Build features such as Person to Person Messaging
-                                                            for student / mentor. Provide a cloud scheduler to set up meetings/appointments between them.
-                                                            Create profile activites and fragments, reusable components for UI building, network requests to 
-                                                            servers, regularly update devices with latest announcements and notifications using Firebase. Finally,
-                                                            run tests on real android devices and into the hands of users for collect feedback, refine and prepare for 
-                                                            presentation.
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-
-                                            <h3 class="sub-title">Project result and summary</h3>
-                                            <p>
-                                                Since our product required access to the user's Steam account including searches in Twitch/YouTube, 
-                                                I had to parse every JSON response from its API (from RabbitMq) and use the appropriate 
-                                                information required for use in the site. The complexity of the project meant that collaborating 
-                                                with others was crucial, and together, by adopting the SCRUM workflow, we were able to build our 
-                                                project well and efficiently.
-                                            </p>
-                                        </div>
-                                        <!-- End Section Content -->
-                                    </div>
-                                    <div class="col-xl-3 col-lg-4 offset-xl-1">
-                                        <div class="project-sidebar">
-                                            <h3 class="title">Information</h3>
-                                            <!-- Start Project Sidebar Item -->
-                                            <ul class="project-sidebar-list-item">
-                                                <!-- Start Project Single Box -->
-                                                <li class="project-sidebar-single-box">
-                                                    <h6 class="title-text">Project Name:</h6>
-                                                    <span class="text">Steam Theater</span>
-                                                </li>
-                                                <!-- End Project Single Box -->
-                                                <!-- Start Project Single Box -->
-                                                <li class="project-sidebar-single-box">
-                                                    <h6 class="title-text">Clients:</h6>
-                                                    <span class="text">NJIT</span>
-                                                </li>
-                                                <!-- End Project Single Box -->
-                                                <!-- Start Project Single Box -->
-                                                <li class="project-sidebar-single-box">
-                                                    <h6 class="title-text">Budget:</h6>
-                                                    <span class="text">N/A</span>
-                                                </li>
-                                                <!-- End Project Single Box -->
-                                                <!-- Start Project Single Box -->
-                                                <li class="project-sidebar-single-box">
-                                                    <h6 class="title-text">Duration:</h6>
-                                                    <span class="text">4 months</span>
-                                                </li>
-                                                <!-- End Project Single Box -->
-                                                <!-- Start Project Single Box -->
-                                                <li class="project-sidebar-single-box">
-                                                    <h6 class="title-text">Date:</h6>
-                                                    <span class="text">Sept, 2019</span>
-                                                </li>
-                                                <!-- End Project Single Box -->
-                                            </ul>
-                                            <!-- End Project Sidebar Item -->
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
-                            <!-- End Project Content Section -->
+                            <div class="col-xl-6 col-lg-6 col-md-8 offset-md-2 offset-lg-0 offset-xl-1">
+                                <div class="video-info-content">
+                                    <h2 class="title">I’m Kevin Solorzano</h2>
+
+                                    <h3 class="sub-title">
+                                        Front-End Developer specializing in Shopify, React & Web Applications.
+                                    </h3>
+
+                                    <p>
+                                        A creative software engineering graduate with great development skills and knowledge of Web Development and UX/UI Design.
+                                        Developed several web applications as well as assisted in the creation of community mobile apps for college students.
+                                    </p>
+                                    <p>
+                                        Administrated over 300
+                                        Shopify Accounts, handling a wide array of daily developmental tasks to maintain a consistent, positive experience to their visitors and generate sales. 
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- .....:::::: End Project Details Section :::::.... -->
+        <!-- ...::: End Vider Info Display Section :::... -->
+
+        <!-- ...::: Start Resume Info Display Section :::... -->
+        <div class="resume-info-display-section  section-gap-tb-165 section-bg">
+            <div class="resume-info-display-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="resume-tab nav">
+                                <li class="nav-item">
+                                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#education-tab">Education</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#experience-tab">Experience</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="resume-info-display-wrapper">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="education-tab" role="tabpanel">
+                                        <ul class="resume-list">
+                                            <!-- Start Resume Tab List Single Item -->
+                                            <li class="resume-tab-list-single-item">
+                                                <div class="content">
+                                                    <div class="left">
+                                                        <span class="year">2016 - 2020</span>
+                                                    </div>
+                                                    <div class="right">
+                                                        <h3 class="title">B.S. in Information Technology - Web Applications</h3>
+                                                        <span class="institute-name">New Jersey Institute of Technology</span>
+                                                        <p>
+                                                            During my 4 years in college, I experimented with a wide variety of majors from Computer Science, 
+                                                            Information Systems and Game Developement before landing with Information Technology to focus on Web Development.
+                                                            Joined Association for Computing Machinery (ACM) club for 2 years developing applications with other fellow members &amp; 
+                                                            developed an exclusive mentoring application for the university during my internship. 
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- End Resume Tab List Single Item -->
+                                           
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="experience-tab" role="tabpanel">
+                                        <ul class="resume-list">
+                                            <!-- Start Resume Tab List Single Item -->
+                                            <li class="resume-tab-list-single-item">
+                                                <div class="content">
+                                                    <div class="left">
+                                                        <span class="year">2021 - Present</span>
+                                                    </div>
+                                                    <div class="right">
+                                                        <h3 class="title">Software Engineer</h3>
+                                                        <span class="institute-name">Dovr Media</span>
+                                                        <p style="margin-top: 1em;">
+                                                            Design &amp; build a kiosk application in Android that displays a furniture-store's entire product catalog with the 
+                                                            capabilities of E-Commerce-like features such as POS checkout, scheduled data updates, displaying product variants and their related collections,
+                                                            &amp; saving items to a wishlist system - all for Dovr Media's clients/accounts.
+                                                        </p>
+                                                        <p>
+                                                            Worked with over 300 Shopify Accounts and handled daily responsibilities such as QA, designing liquid templates, pages and themes, 
+                                                            API/Script integrations like Google Analytics, setting up product collections, theme customizations, updating product data, 
+                                                            &amp; developing private apps in conjuction with Shopify's Admin API.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- End Resume Tab List Single Item -->
+                                            <!-- Start Resume Tab List Single Item -->
+                                            <li class="resume-tab-list-single-item">
+                                                <div class="content">
+                                                    <div class="left">
+                                                        <span class="year">2021 - 2021</span>
+                                                    </div>
+                                                    <div class="right">
+                                                        <h3 class="title">Junior Web Developer</h3>
+                                                        <span class="institute-name">Top Rated Studio</span>
+                                                        <p>
+                                                            Design &amp; build UI concepts/templates for a dashboard content management system to allow the studio to create, update, and manage their 
+                                                            Amazon Shoppable Livestreaming platform more efficiently and eventually for customer use.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- End Resume Tab List Single Item -->
+                                            <!-- Start Resume Tab List Single Item -->
+                                            <li class="resume-tab-list-single-item">
+                                                <div class="content">
+                                                    <div class="left">
+                                                        <span class="year">01/2019 -  09/2019</span>
+                                                    </div>
+                                                    <div class="right">
+                                                        <h3 class="title">Android Developer</h3>
+                                                        <span class="institute-name">Mentor U Connect</span>
+                                                        <p>
+                                                            Collaborated with a team of software developers to create a mobile application in Android that would serve as the mobile counterpart to their new Mentorship Program/Service for students/alumni.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- End Resume Tab List Single Item -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ...::: End Resume Info Display Section :::... -->
 
         <!-- ...::: Start Counter Display Section :::... -->
         <div class="counter-display-section section-gap-tb-165 section-bg-2">
@@ -386,6 +389,72 @@
             </div>
         </div>
         <!-- ...::: End Counter Display Section :::... -->
+
+        <!-- ...::: Start Company Logo Display Section :::... -->
+        <div class="company-logo-display section-mt-165 " style="padding-bottom: 100px;">
+            <div class="company-logo-display-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <!-- Start Section Content -->
+                            <div class="section-content pos-relative">
+                                <span class="section-tag">Favorite Clients</span>
+                                <h2 class="section-title">Work With Trusted Companies.</h2>
+                            </div>
+                            <!-- End Section Content -->
+                        </div>
+                    </div>
+
+                    <div class="company-logo-display-wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <div class="company-logo-display-slider">
+                                    <!-- Slider main container -->
+                                    <div class="swiper-container">
+                                        <!-- Additional required wrapper -->
+                                        <div class="swiper-wrapper">
+                                            <!-- Start Company Logo Slider Single Item -->
+                                            <div class="company-logo-single-item swiper-slide">
+                                                <a href="#" class="image">
+                                                    <img src="assets/images/company-logo/top-rated.png" alt="">
+                                                    <img src="assets/images/company-logo/top-rated.png" alt="">
+                                                </a>
+                                            </div>
+                                            <!-- End Company Logo Slider Single Item -->
+                                            <!-- Start Company Logo Slider Single Item -->
+                                            <div class="company-logo-single-item swiper-slide">
+                                                <a href="#" class="image">
+                                                    <img src="assets/images/company-logo/kiosk.png" alt="">
+                                                    <img src="assets/images/company-logo/kiosk.png" alt="">
+                                                </a>
+                                            </div>
+                                            <!-- End Company Logo Slider Single Item -->
+                                            <!-- Start Company Logo Slider Single Item -->
+                                            <div class="company-logo-single-item swiper-slide">
+                                                <a href="#" class="image">
+                                                    <img src="assets/images/company-logo/teloentrego.png" alt="">
+                                                    <img src="assets/images/company-logo/teloentrego.png" alt="">
+                                                </a>
+                                            </div>
+                                            <!-- End Company Logo Slider Single Item -->
+                                            <!-- Start Company Logo Slider Single Item -->
+                                            <div class="company-logo-single-item swiper-slide" style="visibility: hidden;">
+                                                <a href="#" class="image">
+                                                    <img src="assets/images/company-logo/teloentrego.png" alt="">
+                                                    <img src="assets/images/company-logo/teloentrego.png" alt="">
+                                                </a>
+                                            </div>
+                                            <!-- End Company Logo Slider Single Item -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ...::: End Company Logo Display Section :::... -->
 
         <!-- ...::: Start Footer Section :::... -->
         <footer class="footer-section section-bg overflow-hidden pos-relative">

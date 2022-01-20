@@ -170,7 +170,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="breadcrumb-content">
-                                <h2 class="title">Steam Theater</h2>
+                                <h2 class="title">Teloentrego EC</h2>
                                 <ul class="breadcrumb-link">
                                     <li><a href="project-list.html">Projects</a></li>
                                     <li class="active" aria-current="page">Project Details</li>
@@ -192,36 +192,31 @@
                             <!-- Start Project Content Section -->
                             <div class="project-content-section pos-relative">
                                 <div class="project-hero-image">
-                                    <img src="assets/images/misc/game-controller.png" alt="Game Controller">
+                                    <img src="assets/images/misc/teloentrego.png" alt="Teloentrego EC">
                                 </div>
 
                                 <div class="row">
                                     <div class="col-lg-8">
                                         <!-- Start Section Content -->
                                         <div class="default-content-style pos-relative">
-                                            <span class="section-tag">Steam Theater</span>
-                                            <h2 class="title">Steam Theater is a messaging-broker web application</h2>
+                                            <span class="section-tag">Teloentrego EC</span>
+                                            <h2 class="title">Teloentrego EC is a private order logging system.</h2>
                                             <p>
-                                                This collaborative Senior project was to be submitted at the end of the Fall 2019 
-                                                semester as I was on course to graduate. The goal was to first, establish a four 
-                                                server-cluster consisting of: front-end, back-end, DMZ, and a messaging broker 
-                                                (RabbitMq) wired into a local network router to deploy a real-world web-service 
-                                                product that identified the user's least-played video-games on their Steam backlog, 
-                                                and present Twitch/YouTube streams of those video-games.
-                                            </p>
-                                            <p>
-                                                The user can also view their friend's least-played video-games and compare/contrast 
-                                                what their interests are in their games. Then, scale the project to 12 servers 
-                                                culminating into a 3 tier-cluster of production, development, and staging platforms before deploying.
+                                                Its a logging system built on Bootstrap and React with Firebase as the backend platform to control 
+                                                and store data that gets submitted to it. The purpose of this system is to reduce strain and 
+                                                disorganization on tracking their shipping orders they send to their customers. They wanted a 
+                                                dashboard that was easy to record all their shipping orders in a central hub where they can store
+                                                them and view them later.
                                             </p>
 
                                             <h3 class="sub-title">How to complete this?</h3>
                                             <p>
-                                                Our servers were created through Virtual Box Vm's in Ubuntu 18.04 and 
-                                                we had to configure our static IP addresses to the router. I was responsible 
-                                                of the front-end server, consisting of designing the site's interface 
-                                                authentication process, and writing the scripts required to produce/consume 
-                                                RabbitMq messages in the virtual-host's queue.
+                                                This was challenging because they had tracked no kind of data whatsover to use
+                                                to create a model for the database to construct. They only used WhatsApp messaging 
+                                                to keep track of the order status between clients. Meaning I had to get familiar with 
+                                                their whole operation/business and understand what kind of information they keep track of
+                                                to add to the model. Afterwards, after collecting enough data about their operation,
+                                                create a workflow for the application that can enhance their operation and keep them organized.
                                             </p>
 
                                             <ul class="content-list-item content-list-with-icon">
@@ -232,11 +227,11 @@
                                                         </div>
                                                     </div>
                                                     <div class="right">
-                                                        <h4 class="list-title">Map All REST API Requests</h4>
+                                                        <h4 class="list-title">Identify Goal</h4>
                                                         <p>
-                                                            Use Postman, an API platform, to configure all the required REST API requests needed to pull data from
-                                                            for the application. This data came from API's like Steam, YouTube, &amp; Twitch to pull data such as game stats,
-                                                            player time spent, and views accounted for to track the hottest trending video games across all 3 platforms.
+                                                            Their operation was disorganized and needed a system to enter their order info per customer
+                                                            and update their order status over time. Create a data model that includes information that is integral
+                                                            to their orders, customers, and business.
                                                         </p>
                                                     </div>
                                                 </li>
@@ -247,12 +242,26 @@
                                                         </div>
                                                     </div>
                                                     <div class="right">
-                                                        <h4 class="list-title">Design Web Application</h4>
+                                                        <h4 class="list-title">Create a workflow</h4>
                                                         <p>
-                                                            Use libraries like Bootstrap to build a robust web application that provided a way to sign in, present stat pages, player
-                                                            information, and playlists of the hottest video-game streams on twitch that matched with the video games the user spent the least
-                                                            amount of time on. 
+                                                            Outline CRUD (Create, Read, Update, Delete) features that would exist in the system 
+                                                            before building the backend.
                                                         </p>
+                                                        <ul>
+                                                            <li>
+                                                                (C) - create a new order to log to backend. Info to be submitted should include
+                                                                details such as name of order, items, quantity, recipient information, media, and destination.
+                                                            </li>
+                                                            <li>
+                                                                (R) - read order info and details
+                                                            </li>
+                                                            <li>
+                                                                (U) - update order info and shipping status
+                                                            </li>
+                                                            <li>
+                                                                (D) - delete order info or customer from database.
+                                                            </li>
+                                                        </ul>
                                                     </div>
                                                 </li>
                                                 <li>
@@ -262,28 +271,26 @@
                                                         </div>
                                                     </div>
                                                     <div class="right">
-                                                        <h4 class="list-title">Deploy App &amp; Backend To Messaging Broker</h4>
+                                                        <h4 class="list-title">Build the Front-End and Back-End</h4>
                                                         <p>
-                                                            Start developing the application and the backend database. Build a CURL script to verify 
-                                                            if login info exists in university's DB. Build features such as Person to Person Messaging
-                                                            for student / mentor. Provide a cloud scheduler to set up meetings/appointments between them.
-                                                            Create profile activites and fragments, reusable components for UI building, network requests to 
-                                                            servers, regularly update devices with latest announcements and notifications using Firebase. Finally,
-                                                            run tests on real android devices and into the hands of users for collect feedback, refine and prepare for 
-                                                            presentation.
+                                                            Choose React as the library to create this application for its ability to resuse components 
+                                                            swiftly and access to state management to update order statuses.
+                                                        </p>
+                                                        <p>
+                                                            Choose Firebase as the Back-End platform because of its costs, services and reliability.
+                                                            Its services such as authentication make it easy to verify sign in attempts, storage to store
+                                                            media content, and the firestore to create NoSQL database of their order info and recipients.
+                                                        </p>
+                                                        <p>
+                                                            Firestore's speed to query for data make it ideal when creating search bars in the app based
+                                                            on informational factors such as date, name or order id.
                                                         </p>
                                                     </div>
                                                 </li>
                                             </ul>
 
                                             <h3 class="sub-title">Project result and summary</h3>
-                                            <p>
-                                                Since our product required access to the user's Steam account including searches in Twitch/YouTube, 
-                                                I had to parse every JSON response from its API (from RabbitMq) and use the appropriate 
-                                                information required for use in the site. The complexity of the project meant that collaborating 
-                                                with others was crucial, and together, by adopting the SCRUM workflow, we were able to build our 
-                                                project well and efficiently.
-                                            </p>
+                                            <p>Application keeps them organized and easier to track their orders to their customers thanks to Firebase and the application.</p>
                                         </div>
                                         <!-- End Section Content -->
                                     </div>
@@ -295,31 +302,31 @@
                                                 <!-- Start Project Single Box -->
                                                 <li class="project-sidebar-single-box">
                                                     <h6 class="title-text">Project Name:</h6>
-                                                    <span class="text">Steam Theater</span>
+                                                    <span class="text">Logging System</span>
                                                 </li>
                                                 <!-- End Project Single Box -->
                                                 <!-- Start Project Single Box -->
                                                 <li class="project-sidebar-single-box">
                                                     <h6 class="title-text">Clients:</h6>
-                                                    <span class="text">NJIT</span>
+                                                    <span class="text">Teloentrego EC</span>
                                                 </li>
                                                 <!-- End Project Single Box -->
                                                 <!-- Start Project Single Box -->
                                                 <li class="project-sidebar-single-box">
                                                     <h6 class="title-text">Budget:</h6>
-                                                    <span class="text">N/A</span>
+                                                    <span class="text">$5,000</span>
                                                 </li>
                                                 <!-- End Project Single Box -->
                                                 <!-- Start Project Single Box -->
                                                 <li class="project-sidebar-single-box">
                                                     <h6 class="title-text">Duration:</h6>
-                                                    <span class="text">4 months</span>
+                                                    <span class="text">3 Months</span>
                                                 </li>
                                                 <!-- End Project Single Box -->
                                                 <!-- Start Project Single Box -->
                                                 <li class="project-sidebar-single-box">
                                                     <h6 class="title-text">Date:</h6>
-                                                    <span class="text">Sept, 2019</span>
+                                                    <span class="text">Nov, 2020</span>
                                                 </li>
                                                 <!-- End Project Single Box -->
                                             </ul>

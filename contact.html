@@ -170,10 +170,10 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="breadcrumb-content">
-                                <h2 class="title">Recipe Search</h2>
+                                <h2 class="title">Contact Me</h2>
                                 <ul class="breadcrumb-link">
-                                    <li><a href="project-list.html">Projects</a></li>
-                                    <li class="active" aria-current="page">Project Details</li>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class="active" aria-current="page">Contact</li>
                                 </ul>
                             </div>
                         </div>
@@ -183,201 +183,121 @@
         </div>
         <!-- ...::: End Breadcrumb Section :::... -->
 
-        <!-- .....:::::: Start Project Details Section :::::.... -->
-        <div class="project-details-section section-gap-tb-165">
-            <div class="project-details-box">
+        <!-- ...::: Start Contact Section :::... -->
+        <div class="contact-section section-gap-tb-165">
+            <div class="contact-box pos-relative">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <!-- Start Project Content Section -->
-                            <div class="project-content-section pos-relative">
-                                <div class="project-hero-image">
-                                    <img src="assets/images/misc/recipe.png" alt="Recipe Search">
+                            <!-- Start Map Area-->
+                            <div class="map">
+                                <div class="gmap-box">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96748.74301281697!2d-74.25209532445771!3d40.7312622825006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25370329a0e1d%3A0xe1bcdc2adcfee473!2sNewark%2C%20NJ!5e0!3m2!1sen!2sus!4v1642290945837!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                                 </div>
-
-                                <div class="row">
-                                    <div class="col-lg-8">
-                                        <!-- Start Section Content -->
-                                        <div class="default-content-style pos-relative">
-                                            <span class="section-tag">Recipe Search</span>
-                                            <h2 class="title">Recipe Search is a culinary React-Native Mobile Application</h2>
-                                            <p>
-                                                A mobile application built on the React Native framework that aims to deliver a 
-                                                list of relevant recipe choices based on the list of options provided by the user. 
-                                                The application uses Spoonacular’s API service to provide the recipe data. 
-                                                Working on Android, iOS and avalable to try out on <a style="color: gold;" href="https://expo.io/@solorzke/recipe-search" target="_blank">Expo!</a>
-                                            </p>
-
-                                            <h3 class="sub-title">How to complete this?</h3>
-                                            <p>
-                                                Choose a multi-platform mobile application framework that runs the same code 
-                                                on both mobile platforms (iOS &amp; Android) and keeps a consistent UI and performance on both without 
-                                                spending more time and resources. Find a culinary REST API that provided recipe data up-to-date and 
-                                                was easy to access (and free!)
-                                            </p>
-
-                                            <ul class="content-list-item content-list-with-icon">
-                                                <li>
-                                                    <div class="left">
-                                                        <div class="icon">
-                                                            <i class="icofont-bulb-alt"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="right">
-                                                        <h4 class="list-title">Map Spoonacular's REST API's requests</h4>
-                                                        <p>
-                                                            Find a culinary API like Spoonacular that provides updated recipe and diet based data every day, learn how its
-                                                            billing and access works per request call, and examine the JSON response data per endpoint to determine if their data would 
-                                                            be good enough to use for the application.
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="left">
-                                                        <div class="icon">
-                                                            <i class="icofont-ruler-pencil-alt-2"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="right">
-                                                        <h4 class="list-title">Study UX/UI For Mobile Apps</h4>
-                                                        <p>
-                                                            Examine and study current recipe-based applications that provide similar features to 
-                                                            the one in mind for Recipe Search, and indentify where it can be improved to incorporate into the
-                                                            design.
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="left">
-                                                        <div class="icon">
-                                                            <i class="icofont-airplane"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="right">
-                                                        <h4 class="list-title">Build</h4>
-                                                        <p>
-                                                            After getting familiar with React Native, begin developing its pages, components, and installing dependencies.
-                                                            Set up its routes, both public and restricted, set up its REST API calls to Spoonacular, and integrate its JSON
-                                                            data to the pages to display data such as recipe measurements, ingredients, and cooking time. Also provide hot recipes
-                                                            based on the endpoints responsible for providing this info. Because this was a serverless application, no in-house database was used
-                                                            or created for this application.
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-
-                                            <h3 class="sub-title">Features</h3>
-                                            <ul style="list-style: circle;">
-                                                <li>'Search by Ingredient' meaning fill in all the available ingredients in your kitchen or closest to you to generate the list of recipes that closely match your available ingredients.</li>
-                                                <li>'Search by Label' meaning select the types of diet, meal course, max calories, and cuisine you would like to generate recipes based off of.</li>
-                                                <li>Able to bookmark or save your favorite recipes locally via cache to view them later via 'Bookmarks' Page without having to search them again.</li>
-                                                <li>Share the recipe you found via SMS, Social Media, or Email.</li>
-                                                <li>Generate a random recipe at the start of the application ('Home Page') to try out.</li>
-                                                <li>Grab all of the recipe data from a third party source API (Spoonacular).</li>
-                                                <li>View the recipe information such as its ingredients, instructions, details, health labels, calories and cooking times.</li>
-                                            </ul>
-                                        </div>
-                                        <!-- End Section Content -->
-                                    </div>
-                                    <div class="col-xl-3 col-lg-4 offset-xl-1">
-                                        <div class="project-sidebar">
-                                            <h3 class="title">Information</h3>
-                                            <!-- Start Project Sidebar Item -->
-                                            <ul class="project-sidebar-list-item">
-                                                <!-- Start Project Single Box -->
-                                                <li class="project-sidebar-single-box">
-                                                    <h6 class="title-text">Project Name:</h6>
-                                                    <span class="text">Recipe Search</span>
-                                                </li>
-                                                <!-- End Project Single Box -->
-                                                <!-- Start Project Single Box -->
-                                                <li class="project-sidebar-single-box">
-                                                    <h6 class="title-text">Clients:</h6>
-                                                    <span class="text">Freelance</span>
-                                                </li>
-                                                <!-- End Project Single Box -->
-                                                <!-- Start Project Single Box -->
-                                                <li class="project-sidebar-single-box">
-                                                    <h6 class="title-text">Budget:</h6>
-                                                    <span class="text">N/A</span>
-                                                </li>
-                                                <!-- End Project Single Box -->
-                                                <!-- Start Project Single Box -->
-                                                <li class="project-sidebar-single-box">
-                                                    <h6 class="title-text">Duration:</h6>
-                                                    <span class="text">6 months</span>
-                                                </li>
-                                                <!-- End Project Single Box -->
-                                                <!-- Start Project Single Box -->
-                                                <li class="project-sidebar-single-box">
-                                                    <h6 class="title-text">Date:</h6>
-                                                    <span class="text">Feb, 2020</span>
-                                                </li>
-                                                <!-- End Project Single Box -->
-                                            </ul>
-                                            <!-- End Project Sidebar Item -->
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
-                            <!-- End Project Content Section -->
+                            <!-- End Map Area -->
+                        </div>
+                    </div>
+                    <div class="row flex-lg-row flex-column-reverse">
+                        <div class="col-lg-4">
+                            <div class="contact-sidebar-wapper">
+                                <div class="contact-sidebar">
+                                    <!-- Start Project Sidebar Item -->
+                                    <ul class="contact-sidebar-list-item">
+                                        <!-- Start contact Single Box -->
+                                        <li class="contact-sidebar-single-box">
+                                            <h6 class="title-text">Phone:</h6>
+                                            <a href="tel:+0123456789" class="link">(201)-744-3168</a>
+                                        </li>
+                                        <!-- End contact Single Box -->
+                                        <!-- Start contact Single Box -->
+                                        <li class="contact-sidebar-single-box">
+                                            <h6 class="title-text">Email:</h6>
+                                            <a href="mailto:solorzke@gmail.com" class="link">solorzke@gmail.com</a>
+                                        </li>
+                                        <!-- End contact Single Box -->
+                                        <!-- Start contact Single Box -->
+                                        <li class="contact-sidebar-single-box">
+                                            <h6 class="title-text">LinkedIn:</h6>
+                                            <a href="www.linkedin.com/in/solorzke class="link">LinkedIn</a>
+                                        </li>
+                                        <!-- End contact Single Box -->
+                                        <!-- Start contact Single Box -->
+                                        <li class="contact-sidebar-single-box">
+                                            <h6 class="title-text">Address:</h6>
+                                            <span class="text">Newark, NJ</span>
+                                        </li>
+                                        <!-- End contact Single Box -->
+                                    </ul>
+                                    <!-- End Project Sidebar Item -->
+                                </div>
+                                <!-- Start Sidebar Widget Single Item - Social Widgets -->
+                                <div class="sidebar-widget-single-area ">
+                                    <h3 class="title">Follow Me</h3>
+                                    <ul class="social-link">
+                                        <li><a href="mailto:solorzke@gmail.com" target="_blank"><i class="icofont-email"></i></a></li>
+                                        <li><a href="https://github.com/solorzke" target="_blank"><i class="icofont-github"></i></a></li>
+                                        <li><a href="www.linkedin.com/in/solorzke" target="_blank"><i class="icofont-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                                <!-- End Sidebar Widget Single Item - Social Widgets -->
+                            </div>
+                        </div>
+                        <div class="col-lg-7 offset-lg-1">
+                            <div class="contact-form-wrapper section-mt-165">
+                                <!-- Start Section Content -->
+                                <div class="content">
+                                    <span class="section-tag">Get In Touch</span>
+                                    <h2 class="title">If you have any project or need help. <a href="mailto:solorzke@gmail.com" style="color: gold;">Contact me</a></h2>
+                                </div>
+                                <!-- End Section Content -->
+
+                                <!-- Start Contact Form Box -->
+                                <div class="contact-form-box" style="visibility: hidden;">
+                                    <form id="contact-form" class="default-form contact-form" action="assets/mail/contact.php" method="post">
+                                        <div class="row mb-n6">
+                                            <div class="col-xl-6 mb-6">
+                                                <div class="default-form-group">
+                                                    <input name="name" type="text" placeholder="Name" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 mb-6">
+                                                <div class="default-form-group">
+                                                    <input name="email" type="email" placeholder="Email" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 mb-6">
+                                                <div class="default-form-group">
+                                                    <input name="phone" type="tel" placeholder="Phone" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 mb-6">
+                                                <div class="default-form-group">
+                                                    <input name="subject" type="text" placeholder="Subject" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 mb-6">
+                                                <div class="default-form-group">
+                                                    <textarea name="message" placeholder="Comment" required></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-6">
+                                                <div class="default-form-group tex-center">
+                                                    <button type="submit" class="btn btn-lg btn-outline-one">Submit Message</button>
+                                                </div>
+                                            </div>
+                                            <p class="form-messege"></p>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- End Contact Form Box -->
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- .....:::::: End Project Details Section :::::.... -->
-
-        <!-- ...::: Start Counter Display Section :::... -->
-        <div class="counter-display-section section-gap-tb-165 section-bg-2">
-            <div class="counter-display-wrapper">
-                <div class="container">
-                    <div class="row justify-content-center justify-content-sm-start">
-                        <div class="d-block d-md-flex justify-content-md-start col-12 col-sm-4 col-md-4">
-                            <!-- Start Counterup Single Item -->
-                            <div class="counterup-single-item">
-                                <div class="icon">
-                                    <img src="assets/images/icon/counterup-icon-1.png" alt="">
-                                </div>
-                                <div class="content">
-                                    <h2 class="number"><span class="counter">2,0</span>+</h2>
-                                    <span class="text">Clients</span>
-                                </div>
-                            </div>
-                            <!-- End Counterup Single Item -->
-                        </div>
-                        <div class="d-block d-md-flex justify-content-md-center col-12 col-sm-4 col-md-4">
-                            <!-- Start Counterup Single Item -->
-                            <div class="counterup-single-item">
-                                <div class="icon">
-                                    <img src="assets/images/icon/counterup-icon-2.png" alt="">
-                                </div>
-                                <div class="content">
-                                    <h2 class="number"><span class="counter">8</span></h2>
-                                    <span class="text">Projects Complete</span>
-                                </div>
-                            </div>
-                            <!-- End Counterup Single Item -->
-                        </div>
-                        <div class="d-block d-md-flex justify-content-md-end col-12 col-sm-4 col-md-4">
-                            <!-- Start Counterup Single Item -->
-                            <div class="counterup-single-item">
-                                <div class="icon">
-                                    <img src="assets/images/icon/counterup-icon-3.png" alt="">
-                                </div>
-                                <div class="content">
-                                    <h2 class="number"><span class="counter">3</span>+</h2>
-                                    <span class="text">Years of Experience</span>
-                                </div>
-                            </div>
-                            <!-- End Counterup Single Item -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ...::: End Counter Display Section :::... -->
+        <!-- ...::: End Contact Section :::... -->
 
         <!-- ...::: Start Footer Section :::... -->
         <footer class="footer-section section-bg overflow-hidden pos-relative">

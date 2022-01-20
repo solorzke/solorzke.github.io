@@ -5,12 +5,12 @@
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kevin Solorzano - Portfolio</title>
+    <title>Lendex - Personal Portfolio Bootstrap Template</title>
     <meta name="robots" content="noindex, follow" />
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/misc/logo.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
 
     <!-- CSS
     ============================================ -->
@@ -45,7 +45,7 @@
                         <div class="col">
                             <!-- Start Header Logo -->
                             <a href="index.html" class="header-logo">
-                                <img src="assets/images/misc/logo.png" alt="">
+                                <img src="assets/images/logo/logo.png" alt="">
                             </a>
                             <!-- End Header Logo -->
                         </div>
@@ -53,19 +53,32 @@
                             <!-- Start Header Menu -->
                             <ul class="header-nav">
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
                                 <li class="has-dropdown">
-                                    <a href="#">Projects</a>
+                                    <a href="service-list.html">Service</a>
                                     <ul class="submenu">
-                                    <li><a href="project-list.html">Project List</a></li>
-                                    <li><a href="dovrsign.html">Dovrsign</a></li>
-                                    <li><a href="dovr-media.html">Company Site</a></li>
-                                    <li><a href="smart-collection-automator.html">Smart Collection Automator</a></li>
-                                    <li><a href="teloentrego.html">Teloentrego EC</a></li>
-                                    <li><a href="mentor-u.html">Mentor U Connect</a></li>
-                                    <li><a href="steam.html">Steam Theater</a></li>
-                                    <li><a href="recipe-search.html">Recipe Search</a></li>
-                                    <li><a href="small-business.html">Websites</a></li>
+                                        <li><a href="service-list.html">Services</a></li>
+                                        <li><a href="service-details.html">Service Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="blog-list.html">Blog</a>
+                                    <ul class="submenu">
+                                        <li><a href="blog-list.html">Blog List Full Width</a></li>
+                                        <li><a href="blog-list-sidebar-left.html">Blog List Left Sidebar</a></li>
+                                        <li><a href="blog-list-sidebar-right.html">Blog List Right Sidebar</a></li>
+                                        <li><a href="blog-details.html">Blog Details Full Width</a></li>
+                                        <li><a href="blog-details-sidebar-left.html">Blog Details Left Sidebar</a></li>
+                                        <li><a href="blog-details-sidebar-right.html">Blog Details Right Sidebar</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="#">Pages</a>
+                                    <ul class="submenu">
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="project-list.html">Project</a></li>
+                                    <li><a href="project-details.html">Project Details</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="404-page.html">404 Page</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="contact.html">Contact</a></li>
@@ -89,7 +102,7 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col">
                         <div class="mobile-logo">
-                            <a href="index.html"><img src="assets/images/misc/logo.png" alt=""></a>
+                            <a href="index.html"><img src="assets/images/logo/logo.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col">
@@ -105,7 +118,7 @@
         <!--  Start Offcanvas Mobile Menu Section -->
         <div id="mobile-menu-offcanvas" class="offcanvas offcanvas-rightside offcanvas-mobile-menu-section">
             <!-- Start Offcanvas Header -->
-            <div class="offcanvas-header text-end">
+            <div class="offcanvas-header text-right">
                 <button class="offcanvas-close"><i class="icofont-close-line"></i></button>
             </div> <!-- End Offcanvas Header -->
             <!-- Start Offcanvas Mobile Menu Wrapper -->
@@ -119,20 +132,31 @@
                                 <a href="index.html"><span>Home</span></a>
                             </li>
                             <li>
-                                <a href="about.html"><span>About</span></a>
+                                <a href="#"><span>Services</span></a>
+                                <ul class="mobile-sub-menu">
+                                    <li><a href="service-list.html">Service List</a></li>
+                                    <li><a href="service-details.html">Service Details</a></li>
+                                </ul>
                             </li>
                             <li>
-                                <a href="#"><span>Projects</span></a>
+                                <a href="#"><span>Blog</span></a>
                                 <ul class="mobile-sub-menu">
-                                    <li><a href="project-list.html">Project List</a></li>
-                                    <li><a href="dovrsign.html">Dovrsign</a></li>
-                                    <li><a href="dovr-media.html">Company Site</a></li>
-                                    <li><a href="smart-collection-automator.html">Smart Collection Automator</a></li>
-                                    <li><a href="teloentrego.html">Teloentrego EC</a></li>
-                                    <li><a href="mentor-u.html">Mentor U Connect</a></li>
-                                    <li><a href="steam.html">Steam Theater</a></li>
-                                    <li><a href="recipe-search.html">Recipe Search</a></li>
-                                    <li><a href="small-business.html">Websites</a></li>
+                                    <li><a href="blog-list.html">Blog List Full Width</a></li>
+                                    <li><a href="blog-list-sidebar-left.html">Blog List Left Sidebar</a></li>
+                                    <li><a href="blog-list-sidebar-right.html">Blog List Right Sidebar</a></li>
+                                    <li><a href="blog-details.html">Blog Details Full Width</a></li>
+                                    <li><a href="blog-details-sidebar-left.html">Blog Details Left Sidebar</a></li>
+                                    <li><a href="blog-details-sidebar-right.html">Blog Details Right Sidebar</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span>Pages</span></a>
+                                <ul class="mobile-sub-menu">
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="project-list.html">Project</a></li>
+                                    <li><a href="project-details.html">Project Details</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="404-page.html">404 Page</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -145,11 +169,11 @@
                 <!-- Start Mobile contact Info -->
                 <div class="mobile-contact-info text-center">
                     <ul class="social-link">
-                        <li><a target="_blank" href="www.linkedin.com/in/solorzke"><i class="icofont-linkedin"></i></a>
+                        <li><a target="_blank" href="https://example.com"><i class="icofont-facebook"></i></a>
                         </li>
-                        <li><a target="_blank" href="https://github.com/solorzke"><i class="icofont-github"></i></a>
+                        <li><a target="_blank" href="https://example.com"><i class="icofont-twitter"></i></a>
                         </li>
-                        <li><a target="_blank" href="mailto:solorzke@gmail.com"><i class="icofont-email"></i></a></li>
+                        <li><a target="_blank" href="https://example.com"><i class="icofont-skype"></i></a></li>
                     </ul>
                 </div>
                 <!-- End Mobile contact Info -->
@@ -170,9 +194,9 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="breadcrumb-content">
-                                <h2 class="title">Recipe Search</h2>
+                                <h2 class="title">Project Details</h2>
                                 <ul class="breadcrumb-link">
-                                    <li><a href="project-list.html">Projects</a></li>
+                                    <li><a href="service-list.html">Projects</a></li>
                                     <li class="active" aria-current="page">Project Details</li>
                                 </ul>
                             </div>
@@ -192,29 +216,29 @@
                             <!-- Start Project Content Section -->
                             <div class="project-content-section pos-relative">
                                 <div class="project-hero-image">
-                                    <img src="assets/images/misc/recipe.png" alt="Recipe Search">
+                                    <img src="assets/images/project/project-details-hero-img.jpg" alt="">
                                 </div>
 
                                 <div class="row">
                                     <div class="col-lg-8">
                                         <!-- Start Section Content -->
                                         <div class="default-content-style pos-relative">
-                                            <span class="section-tag">Recipe Search</span>
-                                            <h2 class="title">Recipe Search is a culinary React-Native Mobile Application</h2>
-                                            <p>
-                                                A mobile application built on the React Native framework that aims to deliver a 
-                                                list of relevant recipe choices based on the list of options provided by the user. 
-                                                The application uses Spoonacular’s API service to provide the recipe data. 
-                                                Working on Android, iOS and avalable to try out on <a style="color: gold;" href="https://expo.io/@solorzke/recipe-search" target="_blank">Expo!</a>
-                                            </p>
+                                            <span class="section-tag">Givest - Non Profit Website</span>
+                                            <h2 class="title">Givest is a non profit and fund rising website.</h2>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                                                indust standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                                                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                                                indust standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                                                scrambled it typesetting, remaining essentially unchanged.</p>
+
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                                                indust standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                                                scrambled it typesetting, remaining essentially unchanged.</p>
 
                                             <h3 class="sub-title">How to complete this?</h3>
-                                            <p>
-                                                Choose a multi-platform mobile application framework that runs the same code 
-                                                on both mobile platforms (iOS &amp; Android) and keeps a consistent UI and performance on both without 
-                                                spending more time and resources. Find a culinary REST API that provided recipe data up-to-date and 
-                                                was easy to access (and free!)
-                                            </p>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indust standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it typesetting, remaining essentially unchanged.</p>
 
                                             <ul class="content-list-item content-list-with-icon">
                                                 <li>
@@ -224,12 +248,10 @@
                                                         </div>
                                                     </div>
                                                     <div class="right">
-                                                        <h4 class="list-title">Map Spoonacular's REST API's requests</h4>
-                                                        <p>
-                                                            Find a culinary API like Spoonacular that provides updated recipe and diet based data every day, learn how its
-                                                            billing and access works per request call, and examine the JSON response data per endpoint to determine if their data would 
-                                                            be good enough to use for the application.
-                                                        </p>
+                                                        <h4 class="list-title">Idea Generate</h4>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the
+                                                            standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                                                            typesetting, remaining essentially unchanged.</p>
                                                     </div>
                                                 </li>
                                                 <li>
@@ -239,12 +261,10 @@
                                                         </div>
                                                     </div>
                                                     <div class="right">
-                                                        <h4 class="list-title">Study UX/UI For Mobile Apps</h4>
-                                                        <p>
-                                                            Examine and study current recipe-based applications that provide similar features to 
-                                                            the one in mind for Recipe Search, and indentify where it can be improved to incorporate into the
-                                                            design.
-                                                        </p>
+                                                        <h4 class="list-title">Reasearch & Sketching</h4>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the
+                                                            standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                                                            typesetting, remaining essentially unchanged.</p>
                                                     </div>
                                                 </li>
                                                 <li>
@@ -254,28 +274,17 @@
                                                         </div>
                                                     </div>
                                                     <div class="right">
-                                                        <h4 class="list-title">Build</h4>
-                                                        <p>
-                                                            After getting familiar with React Native, begin developing its pages, components, and installing dependencies.
-                                                            Set up its routes, both public and restricted, set up its REST API calls to Spoonacular, and integrate its JSON
-                                                            data to the pages to display data such as recipe measurements, ingredients, and cooking time. Also provide hot recipes
-                                                            based on the endpoints responsible for providing this info. Because this was a serverless application, no in-house database was used
-                                                            or created for this application.
-                                                        </p>
+                                                        <h4 class="list-title">Launced Project</h4>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the
+                                                            standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                                                            typesetting, remaining essentially unchanged.</p>
                                                     </div>
                                                 </li>
                                             </ul>
 
-                                            <h3 class="sub-title">Features</h3>
-                                            <ul style="list-style: circle;">
-                                                <li>'Search by Ingredient' meaning fill in all the available ingredients in your kitchen or closest to you to generate the list of recipes that closely match your available ingredients.</li>
-                                                <li>'Search by Label' meaning select the types of diet, meal course, max calories, and cuisine you would like to generate recipes based off of.</li>
-                                                <li>Able to bookmark or save your favorite recipes locally via cache to view them later via 'Bookmarks' Page without having to search them again.</li>
-                                                <li>Share the recipe you found via SMS, Social Media, or Email.</li>
-                                                <li>Generate a random recipe at the start of the application ('Home Page') to try out.</li>
-                                                <li>Grab all of the recipe data from a third party source API (Spoonacular).</li>
-                                                <li>View the recipe information such as its ingredients, instructions, details, health labels, calories and cooking times.</li>
-                                            </ul>
+                                            <h3 class="sub-title">Project result and summery</h3>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indust standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it typesetting, remaining essentially unchanged.</p>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indust standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it typesetting, remaining essentially unchanged.</p>
                                         </div>
                                         <!-- End Section Content -->
                                     </div>
@@ -287,31 +296,31 @@
                                                 <!-- Start Project Single Box -->
                                                 <li class="project-sidebar-single-box">
                                                     <h6 class="title-text">Project Name:</h6>
-                                                    <span class="text">Recipe Search</span>
+                                                    <span class="text">Givest</span>
                                                 </li>
                                                 <!-- End Project Single Box -->
                                                 <!-- Start Project Single Box -->
                                                 <li class="project-sidebar-single-box">
                                                     <h6 class="title-text">Clients:</h6>
-                                                    <span class="text">Freelance</span>
+                                                    <span class="text">Reatha Alcorn</span>
                                                 </li>
                                                 <!-- End Project Single Box -->
                                                 <!-- Start Project Single Box -->
                                                 <li class="project-sidebar-single-box">
                                                     <h6 class="title-text">Budget:</h6>
-                                                    <span class="text">N/A</span>
+                                                    <span class="text">$890.00</span>
                                                 </li>
                                                 <!-- End Project Single Box -->
                                                 <!-- Start Project Single Box -->
                                                 <li class="project-sidebar-single-box">
                                                     <h6 class="title-text">Duration:</h6>
-                                                    <span class="text">6 months</span>
+                                                    <span class="text">25 days</span>
                                                 </li>
                                                 <!-- End Project Single Box -->
                                                 <!-- Start Project Single Box -->
                                                 <li class="project-sidebar-single-box">
                                                     <h6 class="title-text">Date:</h6>
-                                                    <span class="text">Feb, 2020</span>
+                                                    <span class="text">09 Feb, 2021</span>
                                                 </li>
                                                 <!-- End Project Single Box -->
                                             </ul>
@@ -341,8 +350,8 @@
                                     <img src="assets/images/icon/counterup-icon-1.png" alt="">
                                 </div>
                                 <div class="content">
-                                    <h2 class="number"><span class="counter">2,0</span>+</h2>
-                                    <span class="text">Clients</span>
+                                    <h2 class="number"><span class="counter">2,58</span>+</h2>
+                                    <span class="text">Happy Clients</span>
                                 </div>
                             </div>
                             <!-- End Counterup Single Item -->
@@ -354,8 +363,8 @@
                                     <img src="assets/images/icon/counterup-icon-2.png" alt="">
                                 </div>
                                 <div class="content">
-                                    <h2 class="number"><span class="counter">8</span></h2>
-                                    <span class="text">Projects Complete</span>
+                                    <h2 class="number"><span class="counter">590</span>K</h2>
+                                    <span class="text">Project Complete</span>
                                 </div>
                             </div>
                             <!-- End Counterup Single Item -->
@@ -367,7 +376,7 @@
                                     <img src="assets/images/icon/counterup-icon-3.png" alt="">
                                 </div>
                                 <div class="content">
-                                    <h2 class="number"><span class="counter">3</span>+</h2>
+                                    <h2 class="number"><span class="counter">28</span>+</h2>
                                     <span class="text">Years of Experience</span>
                                 </div>
                             </div>
@@ -384,7 +393,28 @@
             <div class="footer-inner-shape-top-left"></div>
             <div class="footer-inner-shape-top-right"></div>
             <div class="footer-section-top section-gap-t-165">
-                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- Start Section Content -->
+                            <div class="section-content pos-relative text-center">
+                                <span class="section-tag">Get Latest Updates</span>
+                                <h2 class="section-title">Subscribe For Newsletter</h2>
+                            </div>
+                            <!-- End Section Content -->
+                        </div>
+                    </div>
+                    <div class="footer-top-wrapper text-center">
+                        <div class="row">
+                            <div class="col-12">
+                                <form action="#" class="footer-newsletter">
+                                    <input type="email" placeholder="demo@example.com">
+                                    <button class="submit-btn" type="submit">Subscribe Now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="footer-center section-gap-tb-165">
                 <div class="container">
@@ -392,9 +422,9 @@
                         <div class="col-auto mb-5">
                             <!-- Start Single Footer Info -->
                             <div class="footer-single-info">
-                                <a href="tel:+2017443168" class="info-box">
+                                <a href="tel:+0123456789" class="info-box">
                                     <span class="icon"><i class="icofont-phone"></i></span>
-                                    <span class="text">(201)-744-3168</span>
+                                    <span class="text">0123456789</span>
                                 </a>
                             </div>
                             <!-- Start Single Footer Info -->
@@ -404,7 +434,7 @@
                             <div class="footer-single-info">
                                 <a href="mailto:demo@example.com" class="info-box">
                                     <span class="icon"><i class="icofont-envelope-open"></i></span>
-                                    <span class="text">solorzke@gmail.com</span>
+                                    <span class="text">demo@example.com</span>
                                 </a>
                             </div>
                             <!-- Start Single Footer Info -->
@@ -413,9 +443,9 @@
                             <!-- Start Single Footer Info -->
                             <div class="footer-single-info">
                                 <ul class="social-link">
-                                    <li><a href="https://www.twitter.com/solorzke" target="_blank"><i class="icofont-twitter"></i></a></li>
-                                    <li><a href="https://github.com/solorzke" target="_blank"><i class="icofont-github"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/in/solorzke" target="_blank"><i class="icofont-linkedin"></i></a></li>
+                                    <li><a href="https://www.example.com" target="_blank"><i class="icofont-facebook"></i></a></li>
+                                    <li><a href="https://www.example.com" target="_blank"><i class="icofont-dribbble"></i></a></li>
+                                    <li><a href="https://www.example.com" target="_blank"><i class="icofont-linkedin"></i></a></li>
                                 </ul>
                             </div>
                             <!-- Start Single Footer Info -->
@@ -428,19 +458,20 @@
                     <div class="row justify-content-center justify-content-md-between align-items-center flex-column-reverse flex-md-row">
                         <div class="col-auto">
                             <div class="footer-copyright">
-                                <p class="copyright-text">&copy; 2021 <a href="index.html">Kevin Solorzano</a></p>
+                                <p class="copyright-text">&copy; 2021 <a href="index.html">Lendex</a> Made with <i class="icofont-heart"></i> by <a href="https://hasthemes.com/" target="_blank">HasThemes</a> </p>
                             </div>
                         </div>
                         <div class="col-auto">
-                            <a href="/" class="footer-logo">
+                            <a href="index.html" class="footer-logo">
                                 <div class="logo">
-                                    <img style="max-width: 100%; height: 100px;"src="assets/images/misc/logo.png" alt="Logo">
+                                    <img src="assets/images/logo/logo.png" alt="">
                                 </div>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
+
         </footer>
         <!-- ...::: End Footer Section :::... -->
 
